@@ -1,84 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parati — Artisanal Brazilian Cachaça | LES BIENHEUREUX</title>
-  <meta name="description" content="Parati is an exceptionally aromatic artisanal cachaça from Brazil, distilled in small batches in a 19th-century copper still. Gold medal winner at Global Rum & Cachaça Masters 2024." />
-  <link rel="canonical" href="https://www.lesbienheureux.com/brands/parati.html" />
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPCP96RNWK"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QPCP96RNWK');</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" /><link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
-  <style>:root{--brand-accent:#1F7A3E;} .brand-hero{background:linear-gradient(135deg,#0d3d1f 0%,#1F7A3E 50%,#082412 100%);}  </style>
-</head>
-<body>
-<nav id="navbar" class="scrolled">
-  <div class="nav-container">
-    <a href="../index.html" class="nav-logo"><img src="../images/logo.svg" alt="Les Bienheureux" /></a>
-    <ul class="nav-menu">
-      <li><a href="../index.html">Home</a></li>
-      <li class="nav-dropdown"><a href="../index.html#brands">Our Brands <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
-        <div class="dropdown-menu"><div class="dropdown-menu-inner"><a href="bellevoye.html">Bellevoye</a><a href="puravida.html">Pura Vida</a><a href="lacrobate.html">L'Acrobate</a><a href="augustinlefort.html">Augustin Lefort</a><a href="mamaquilla.html">Mama Quilla</a><a href="embargo.html">Embargo</a><a href="parati.html">Parati</a><a href="bercloux.html">Bercloux</a><a href="beauchamp.html">Beauchamp</a><a href="elpasadordeoro.html">El Pasador de Oro</a><a href="thoreau.html">Thoreau</a><a href="marquisdebordeaux.html">Marquis de Bordeaux</a><a href="alexandresirech.html">Alexandre Sirech</a></div></div>
-      </li>
-      <li><a href="../index.html#contact">Contact</a></li>
-    </ul>
-    <div class="lang-switcher"><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn" data-lang="fr">FR</button><button class="lang-btn" data-lang="es">ES</button></div>
-    <button class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-
-<section class="brand-hero" style="position:relative;">
-  <div class="brand-hero-bg" style="position:absolute;inset:0;background-image:url('../images/parati/parati-1.png');background-size:cover;background-position:center;opacity:0.82;z-index:0;" data-lightbox-src="../images/parati/parati-1.png"></div>
-  <div class="container brand-hero-content" style="position:relative;z-index:2;">
-    <div class="brand-breadcrumb"><a href="../index.html">Home</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg><a href="../index.html#brands">Brands</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg><span>Parati</span></div>
-    <img src="../images/parati/logo.png" alt="Parati Cachaça" class="brand-hero-logo" />
-    <h1>Cachaça Parati do Brasil</h1>
-    <p class="tagline">Artisanal · 19th-Century Copper Still · Gold Medal 2024</p>
-    <div class="award-tags-row" style="margin-top:1.2rem;">
-      <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor" style="width:10px;height:10px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Gold — Global Rum Masters 2024</span>
-      <span class="award-tag-sm" style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.35);background:rgba(255,255,255,0.1);">Copper Pot Still · Brazil</span>
-    </div>
-  </div>
-</section>
-
-<section class="brand-about">
-  <div class="container">
-    <div class="brand-about-grid">
-      <div class="brand-image-wrap fade-in">
-        <img src="../images/parati/parati-1.png" alt="Parati Cachaça" class="brand-main-image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parati — Artisanal Brazilian Cachaça | LES BIENHEUREUX</title>
+    <meta
+      name="description"
+      content="Parati is an exceptionally aromatic artisanal cachaça from Brazil, distilled in small batches in a 19th-century copper still. Gold medal winner at Global Rum & Cachaça Masters 2024."
+    />
+    <link rel="canonical" href="https://www.lesbienheureux.com/brands/parati.html" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPCP96RNWK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-QPCP96RNWK');
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg" />
+    <style>
+      :root {
+        --brand-accent: #1f7a3e;
+      }
+      .brand-hero {
+        background: linear-gradient(135deg, #0d3d1f 0%, #1f7a3e 50%, #082412 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="scrolled">
+      <div class="nav-container">
+        <a href="../index.html" class="nav-logo"
+          ><img src="../images/logo.svg" alt="Les Bienheureux"
+        /></a>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li class="nav-dropdown">
+            <a href="../index.html#brands"
+              >Our Brands
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" /></svg
+            ></a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <a href="bellevoye.html">Bellevoye</a><a href="puravida.html">Pura Vida</a
+                ><a href="lacrobate.html">L'Acrobate</a
+                ><a href="augustinlefort.html">Augustin Lefort</a
+                ><a href="mamaquilla.html">Mama Quilla</a><a href="embargo.html">Embargo</a
+                ><a href="parati.html">Parati</a><a href="bercloux.html">Bercloux</a
+                ><a href="beauchamp.html">Beauchamp</a
+                ><a href="elpasadordeoro.html">El Pasador de Oro</a
+                ><a href="thoreau.html">Thoreau</a
+                ><a href="marquisdebordeaux.html">Marquis de Bordeaux</a
+                ><a href="alexandresirech.html">Alexandre Sirech</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en">EN</button
+          ><button class="lang-btn" data-lang="fr">FR</button
+          ><button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <button class="nav-hamburger" id="nav-hamburger">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="brand-text fade-up">
-        <span class="section-subtitle">Cachaça · Brazil</span>
-        <h2 class="section-title" style="color:#1F7A3E;">An Exceptionally Aromatic Cachaça</h2>
-        <p>PARATI is produced from fresh sugarcane juice using an utterly artisanal process in a small <strong>19th-century copper still</strong>. Only the heart of the distillation is retained.</p>
-        <p>PARATI is a blend of young and older cachaças. The aged cachaças are matured in barrels made of local <strong>jequitibá wood</strong> (a typical tree of the Brazilian Atlantic forest), French oak, and American oak.</p>
-        <p>The name PARATI cachaça is derived from the beautiful coastal town of Parati, where the first cachaças were produced by Portuguese settlers.</p>
-        <div class="about-highlight" style="background:#1F7A3E;">
-          <strong>What is Cachaça?</strong><br/>
-          Cachaça is made exclusively in Brazil — a PDO (Protected Designation of Origin). It comes from the fermentation and distillation of sugar cane. Cachaça is Brazilian agricultural rum.
+    </nav>
+
+    <section class="brand-hero" style="position: relative">
+      <div
+        class="brand-hero-bg"
+        style="
+          position: absolute;
+          inset: 0;
+          background-image: url('../images/parati/parati-1.png');
+          background-size: cover;
+          background-position: center;
+          opacity: 0.82;
+          z-index: 0;
+        "
+        data-lightbox-src="../images/parati/parati-1.png"
+      ></div>
+      <div class="container brand-hero-content" style="position: relative; z-index: 2">
+        <div class="brand-breadcrumb">
+          <a href="../index.html">Home</a
+          ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" /></svg
+          ><a href="../index.html#brands">Brands</a
+          ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" /></svg
+          ><span>Parati</span>
         </div>
-        <div class="about-highlight" style="background:#fff;border:2px solid #1F7A3E;color:#333;margin-top:1rem;">
-          <strong style="color:#1F7A3E;">Tasting Notes</strong><br/>
-          <strong>Nose:</strong> Intense — fresh cane juice, exotic fruits, resins (eucalyptus and camphor).<br/>
-          <strong>Palate:</strong> Soft and suave with a touch of honey.<br/>
-          <strong>Finish:</strong> Refreshing — sweet/sour flavours and candied citrus.
-        </div>
-        <div style="margin-top:1.5rem;padding:1rem 1.5rem;background:#edf5f0;border-radius:16px;display:flex;align-items:center;gap:1rem;">
-          <svg viewBox="0 0 24 24" fill="#c9a14a" width="28" height="28"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <div><strong style="color:#1F7A3E;">Gold Medal</strong><br/><span style="font-size:0.85rem;color:#555;">Global Rum & Cachaça Masters 2024</span></div>
-        </div>
-        <div style="margin-top:1rem;padding:1rem 1.5rem;background:#edf5f0;border-radius:16px;">
-          <strong style="color:#1F7A3E;font-size:0.9rem;">The PARATINA Recipe</strong><br/>
-          <p style="font-size:0.85rem;color:#555;margin:0.5rem 0 0;">Cut half a lime into 8 pieces. Muddle in a shaker. Add 2cl simple syrup, 5 large ice cubes, and 5cl of PARATI. Stir, and serve!</p>
+        <img src="../images/parati/logo.png" alt="Parati Cachaça" class="brand-hero-logo" />
+        <h1>Cachaça Parati do Brasil</h1>
+        <p class="tagline">Artisanal · 19th-Century Copper Still · Gold Medal 2024</p>
+        <div class="award-tags-row" style="margin-top: 1.2rem">
+          <span class="award-tag"
+            ><svg viewBox="0 0 24 24" fill="currentColor" style="width: 10px; height: 10px">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              /></svg
+            >Gold — Global Rum Masters 2024</span
+          >
+          <span
+            class="award-tag-sm"
+            style="
+              color: rgba(255, 255, 255, 0.85);
+              border-color: rgba(255, 255, 255, 0.35);
+              background: rgba(255, 255, 255, 0.1);
+            "
+            >Copper Pot Still · Brazil</span
+          >
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer id="footer"><div class="footer-top"><div class="container"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:2rem;"><div><img src="../images/logo.svg" alt="Les Bienheureux" class="footer-brand-logo" /></div><div style="display:flex;gap:1.5rem;"><a href="../index.html" style="color:rgba(255,255,255,0.6);font-size:0.85rem;">Home</a><a href="../index.html#brands" style="color:rgba(255,255,255,0.6);font-size:0.85rem;">All Brands</a><a href="../legal.html" style="color:rgba(255,255,255,0.6);font-size:0.85rem;">Legal</a></div></div></div></div><div class="container"><div class="footer-bottom"><p>© 2025 LES BIENHEUREUX. All rights reserved.</p><p>Website by <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a></p></div></div><div class="footer-warning"><div class="container"><p><strong>ALCOHOL ABUSE IS DANGEROUS FOR YOUR HEALTH. DRINK RESPONSIBLY.</strong></p></div></div></footer>
-<button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
-<script src="../js/main.js"></script>
-</body>
+    <section class="brand-about">
+      <div class="container">
+        <div class="brand-about-grid">
+          <div class="brand-image-wrap fade-in">
+            <img
+              src="../images/parati/parati-1.png"
+              alt="Parati Cachaça"
+              class="brand-main-image"
+            />
+          </div>
+          <div class="brand-text fade-up">
+            <span class="section-subtitle">Cachaça · Brazil</span>
+            <h2 class="section-title" style="color: #1f7a3e">An Exceptionally Aromatic Cachaça</h2>
+            <p>
+              PARATI is produced from fresh sugarcane juice using an utterly artisanal process in a
+              small <strong>19th-century copper still</strong>. Only the heart of the distillation
+              is retained.
+            </p>
+            <p>
+              PARATI is a blend of young and older cachaças. The aged cachaças are matured in
+              barrels made of local <strong>jequitibá wood</strong> (a typical tree of the Brazilian
+              Atlantic forest), French oak, and American oak.
+            </p>
+            <p>
+              The name PARATI cachaça is derived from the beautiful coastal town of Parati, where
+              the first cachaças were produced by Portuguese settlers.
+            </p>
+            <div class="about-highlight" style="background: #1f7a3e">
+              <strong>What is Cachaça?</strong><br />
+              Cachaça is made exclusively in Brazil — a PDO (Protected Designation of Origin). It
+              comes from the fermentation and distillation of sugar cane. Cachaça is Brazilian
+              agricultural rum.
+            </div>
+            <div
+              class="about-highlight"
+              style="background: #fff; border: 2px solid #1f7a3e; color: #333; margin-top: 1rem"
+            >
+              <strong style="color: #1f7a3e">Tasting Notes</strong><br />
+              <strong>Nose:</strong> Intense — fresh cane juice, exotic fruits, resins (eucalyptus
+              and camphor).<br />
+              <strong>Palate:</strong> Soft and suave with a touch of honey.<br />
+              <strong>Finish:</strong> Refreshing — sweet/sour flavours and candied citrus.
+            </div>
+            <div
+              style="
+                margin-top: 1.5rem;
+                padding: 1rem 1.5rem;
+                background: #edf5f0;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+              "
+            >
+              <svg viewBox="0 0 24 24" fill="#c9a14a" width="28" height="28">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <div>
+                <strong style="color: #1f7a3e">Gold Medal</strong><br /><span
+                  style="font-size: 0.85rem; color: #555"
+                  >Global Rum & Cachaça Masters 2024</span
+                >
+              </div>
+            </div>
+            <div
+              style="
+                margin-top: 1rem;
+                padding: 1rem 1.5rem;
+                background: #edf5f0;
+                border-radius: 16px;
+              "
+            >
+              <strong style="color: #1f7a3e; font-size: 0.9rem">The PARATINA Recipe</strong><br />
+              <p style="font-size: 0.85rem; color: #555; margin: 0.5rem 0 0">
+                Cut half a lime into 8 pieces. Muddle in a shaker. Add 2cl simple syrup, 5 large ice
+                cubes, and 5cl of PARATI. Stir, and serve!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 2rem;
+            "
+          >
+            <div>
+              <img src="../images/logo.svg" alt="Les Bienheureux" class="footer-brand-logo" />
+            </div>
+            <div style="display: flex; gap: 1.5rem">
+              <a href="../index.html" style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem"
+                >Home</a
+              ><a
+                href="../index.html#brands"
+                style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem"
+                >All Brands</a
+              ><a href="../legal.html" style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem"
+                >Legal</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-bottom">
+          <p>© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p>
+            Website by
+            <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-warning">
+        <div class="container">
+          <p><strong>ALCOHOL ABUSE IS DANGEROUS FOR YOUR HEALTH. DRINK RESPONSIBLY.</strong></p>
+        </div>
+      </div>
+    </footer>
+    <button id="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="19" x2="12" y2="5" />
+        <polyline points="5 12 12 5 19 12" />
+      </svg>
+    </button>
+    <script src="../js/main.js"></script>
+  </body>
 </html>

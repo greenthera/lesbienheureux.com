@@ -14,6 +14,10 @@ importers:
       uipro-cli:
         specifier: ^2.2.3
         version: 2.2.3
+    devDependencies:
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
 
 packages:
 
@@ -95,6 +99,11 @@ packages:
   ora@8.2.0:
     resolution: {integrity: sha512-weP+BZ8MVNnlCm8c0Qdc1WSWq4Qn7I+9CJGm7Qali6g44e/PUzbjNqJX5NJ9ljlNMosfJvg1fKEGILklK9cwnw==}
     engines: {node: '>=18'}
+
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
@@ -190,6 +199,8 @@ snapshots:
       stdin-discarder: 0.2.2
       string-width: 7.2.0
       strip-ansi: 7.2.0
+
+  prettier@3.8.1: {}
 
   prompts@2.4.2:
     dependencies:
