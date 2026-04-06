@@ -45,6 +45,8 @@ body {
   background: var(--white);
   overflow-x: hidden;
   line-height: 1.6;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 img {
   max-width: 100%;
@@ -2061,6 +2063,344 @@ section {
   margin: 1rem auto;
 }
 
+/* === TYPOGRAPHY NORMALIZATION === */
+/* Standardize body text across all sections — eliminates scattered inline font-size overrides */
+.brand-text p,
+.brand-about p {
+  font-size: 0.92rem;
+  line-height: 1.85;
+  color: #444;
+}
+.edition-card-body p,
+.tasting-item p {
+  font-size: 0.88rem;
+}
+.brand-card p {
+  font-size: 0.82rem;
+}
+.facilities-content p,
+.about-text p {
+  font-size: 0.93rem;
+  line-height: 1.85;
+}
+.contact-info p {
+  font-size: 0.92rem;
+}
+/* Consistent section text styles */
+.text-sm   { font-size: 0.82rem; }
+.text-body { font-size: 0.92rem; }
+.text-lg   { font-size: 1.05rem; }
+
+/* === FOUNDERS SECTION — tighter image ratio === */
+.founders-grid {
+  grid-template-columns: 5fr 7fr;
+}
+.founders-image {
+  max-height: 580px;
+  overflow: hidden;
+}
+.founders-image img {
+  object-position: top center;
+}
+
+/* === PHILOSOPHY / VALUES — redesigned as manifesto === */
+#values {
+  background: var(--primary-dark);
+  overflow: hidden;
+  position: relative;
+}
+#values::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../images/company.webp') center/cover no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+.philosophy-intro {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+  position: relative;
+}
+.philosophy-intro .section-subtitle {
+  color: var(--gold);
+  opacity: 0.9;
+}
+.philosophy-intro h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+.philosophy-intro > p {
+  color: rgba(255,255,255,0.65);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+.philosophy-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.philosophy-pillar {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: var(--transition);
+}
+.philosophy-pillar:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(201,161,74,0.3);
+  transform: translateY(-4px);
+}
+.philosophy-pillar.featured {
+  background: rgba(201,161,74,0.1);
+  border-color: rgba(201,161,74,0.4);
+}
+.pillar-number {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgba(201,161,74,0.18);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.philosophy-pillar h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.philosophy-pillar p {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.pillar-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(201,161,74,0.4);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+}
+.philosophy-manifesto {
+  position: relative;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.philosophy-manifesto p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.7;
+  margin: 0;
+}
+.philosophy-manifesto cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+/* === AWARDS SECTION — impactful redesign === */
+.awards-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 2.5rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(201,161,74,0.2);
+  border-radius: var(--radius-lg);
+}
+.awards-counter-stat {
+  text-align: center;
+}
+.awards-counter-stat .num {
+  font-family: var(--font-serif);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  display: block;
+}
+.awards-counter-stat .lbl {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.5);
+  font-weight: 600;
+  margin-top: 0.4rem;
+  display: block;
+}
+.awards-counter-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,0.12);
+}
+/* Award cards — medal type color coding */
+.award-card {
+  position: relative;
+  overflow: hidden;
+}
+.award-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: rgba(201,161,74,0.5);
+}
+.award-card.medal-master::before { background: linear-gradient(90deg,#c0c8d8,#e8edf5); }
+.award-card.medal-grand::before  { background: linear-gradient(90deg,#c9a14a,#fff0b0,#c9a14a); }
+.award-card.medal-gold::before   { background: linear-gradient(90deg,#c9a14a,#e8c97a); }
+.award-card.medal-bronze::before { background: linear-gradient(90deg,#a07050,#c09070); }
+
+.award-medal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+.award-medal-badge.gold    { background: rgba(201,161,74,0.18); color: var(--gold-light); border: 1px solid rgba(201,161,74,0.35); }
+.award-medal-badge.master  { background: rgba(180,200,230,0.12); color: #c0d0e8; border: 1px solid rgba(180,200,230,0.25); }
+.award-medal-badge.grand   { background: rgba(201,161,74,0.25); color: #fff0b0; border: 1px solid rgba(201,161,74,0.5); }
+.award-medal-badge.bronze  { background: rgba(160,112,80,0.15); color: #c8a080; border: 1px solid rgba(160,112,80,0.3); }
+
+.award-icon-large {
+  margin-bottom: 1rem;
+}
+.award-icon-large svg {
+  width: 40px;
+  height: 40px;
+}
+.award-year {
+  font-size: 0.9rem;
+}
+.award-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.award-brand {
+  font-size: 0.82rem;
+}
+
+/* === BRAND SPECS BAR === */
+.brand-specs-bar {
+  background: var(--white);
+  border-bottom: 1px solid rgba(0,29,133,0.07);
+  padding: 1.2rem 0;
+}
+.brand-specs-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+}
+.brand-spec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-right: 1px solid rgba(0,29,133,0.08);
+  flex-shrink: 0;
+  min-width: 110px;
+}
+.brand-spec-item:last-child {
+  border-right: none;
+}
+.brand-spec-item .spec-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 0.3rem;
+  font-family: var(--font-sans);
+}
+.brand-spec-item .spec-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary);
+  font-family: var(--font-sans);
+  text-align: center;
+}
+
+/* === BRAND GALLERY MASONRY === */
+.brand-gallery-masonry {
+  columns: 2;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+.brand-gallery-masonry .gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  position: relative;
+}
+.brand-gallery-masonry .gallery-item-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: block;
+}
+.brand-gallery-masonry .gallery-item:hover .gallery-item-bg {
+  transform: scale(1.04);
+}
+.brand-gallery-masonry .gallery-item-bg.ratio-4-3  { aspect-ratio: 4/3; }
+.brand-gallery-masonry .gallery-item-bg.ratio-3-4  { aspect-ratio: 3/4; }
+.brand-gallery-masonry .gallery-item-bg.ratio-1-1  { aspect-ratio: 1/1; }
+.brand-gallery-masonry .gallery-item-bg.ratio-16-9 { aspect-ratio: 16/9; }
+.brand-gallery-masonry .gallery-item-bg.ratio-3-2  { aspect-ratio: 3/2; }
+/* Product bottle shots — contain keeps full bottle visible */
+.brand-gallery-masonry .gallery-item-bg.product    { background-size: contain; background-color: #f0ebe2; }
+/* Hover zoom icon overlay */
+.brand-gallery-masonry .gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+}
+.brand-gallery-masonry .gallery-item:hover::after {
+  background: rgba(0,0,0,0.12);
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 1200px) {
   .brands-grid {
@@ -2110,6 +2450,12 @@ section {
   .values-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .philosophy-pillars {
+    grid-template-columns: 1fr 1fr;
+  }
+  .awards-counter {
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2137,6 +2483,20 @@ section {
   .values-grid {
     grid-template-columns: 1fr;
   }
+  .philosophy-pillars {
+    grid-template-columns: 1fr;
+  }
+  .awards-counter {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .awards-counter-divider {
+    width: 80px;
+    height: 1px;
+  }
+  .brand-gallery-masonry {
+    columns: 2;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -2161,11 +2521,37 @@ section {
     flex-direction: column;
     text-align: center;
   }
+  /* Specs bar: wrap to 3-per-row grid on mobile */
+  .brand-specs-inner {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+  .brand-spec-item {
+    flex: 0 0 33.333%;
+    padding: 0.6rem 0.5rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,29,133,0.08);
+    min-width: unset;
+  }
+  /* Brand card footer: wrap tag to next line if needed */
+  .brand-card-footer {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  /* Awards counter: tighter padding on mobile */
+  .awards-counter {
+    padding: 1.5rem 1rem;
+  }
+  /* Container padding on mobile */
+  .container {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
   .brands-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .about-stats {
     grid-template-columns: 1fr;
@@ -2187,5 +2573,13 @@ section {
   }
   .facilities-images {
     grid-template-columns: 1fr;
+  }
+  /* Specs bar: 2-per-row on very small screens */
+  .brand-spec-item {
+    flex: 0 0 50%;
+  }
+  /* Brand gallery: single column on small phones */
+  .brand-gallery-masonry {
+    columns: 1;
   }
 }
