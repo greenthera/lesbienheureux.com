@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LES BIENHEUREUX — Brewers, Distillers, Blenders & Maturers of Joy</title>
+  <meta name="description" content="LES BIENHEUREUX is a French spirits company established in 2015, creator of BELLEVOYE (leader in French whiskies) and EL PASADOR DE ORO (most awarded rum). Brewers, distillers, blenders and maturers of excellence." />
+  <meta name="keywords" content="Les Bienheureux, Bellevoye, whisky français, El Pasador de Oro, rhum, spiritueux, Embargo, Pura Vida, distillerie, Bercloux, spirits France" />
+  <meta name="author" content="LES BIENHEUREUX" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.lesbienheureux.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.lesbienheureux.com/" />
+  <meta property="og:title" content="LES BIENHEUREUX — Brewers, Distillers, Blenders & Maturers of Joy" />
+  <meta property="og:description" content="French spirits company revolutionizing the market through innovation and excellence since 2015. Creator of BELLEVOYE, EL PASADOR DE ORO, EMBARGO and more." />
+  <meta property="og:image" content="images/company.webp" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LES BIENHEUREUX — Brewers, Distillers, Blenders & Maturers of Joy" />
+  <meta name="twitter:description" content="French spirits company revolutionizing the market through innovation and excellence since 2015." />
+  <meta name="twitter:image" content="images/company.webp" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LES BIENHEUREUX",
+    "url": "https://www.lesbienheureux.com",
+    "logo": "https://www.lesbienheureux.com/images/logo.svg",
+    "description": "French spirits company — Brewers, distillers, blenders and maturers of joy. Established 2015.",
+    "foundingDate": "2015",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "10, avenue de la Grande Armée",
+      "addressLocality": "Paris",
+      "postalCode": "75017",
+      "addressCountry": "FR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+33-5-56-88-32-92",
+      "contactType": "Customer Service",
+      "email": "contact@lesbienheureux.com"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Bienheureuxspirits/",
+      "https://www.instagram.com/les.bienheureux/",
+      "https://www.youtube.com/channel/UCzgL5b-8trb-qwcadX6eyOw/featured"
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QPCP96RNWK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QPCP96RNWK');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+</head>
+<body>
+
+<!-- =================== AGE GATE =================== -->
+<div id="age-gate">
+  <div class="age-gate-inner">
+    <img src="images/logo.svg" alt="Les Bienheureux" class="age-gate-logo" />
+    <h2 data-i18n="age_gate_title">Age Verification</h2>
+    <p data-i18n="age_gate_text">You must be of legal drinking age in your country to enter this site.</p>
+    <div class="age-gate-lang">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="es">ES</button>
+    </div>
+    <div class="age-gate-btns">
+      <button class="btn-age-yes" id="age-yes" data-i18n="age_gate_yes">Yes, I am of legal age</button>
+      <button class="btn-age-no" id="age-no" data-i18n="age_gate_no">No, exit</button>
+    </div>
+    <p class="age-gate-warning" data-i18n="age_gate_warning">ALCOHOL ABUSE IS DANGEROUS FOR YOUR HEALTH. DRINK RESPONSIBLY.</p>
+  </div>
+</div>
+
+<!-- =================== NAVBAR =================== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="Les Bienheureux" />
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li class="nav-dropdown">
+        <a href="#brands" data-i18n="nav_brands">Our Brands
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-menu-inner">
+            <a href="brands/bellevoye.html">Bellevoye</a>
+            <a href="brands/puravida.html">Pura Vida</a>
+            <a href="brands/lacrobate.html">L'Acrobate</a>
+            <a href="brands/augustinlefort.html">Augustin Lefort</a>
+            <a href="brands/mamaquilla.html">Mama Quilla</a>
+            <a href="brands/embargo.html">Embargo</a>
+            <a href="brands/parati.html">Parati</a>
+            <a href="brands/bercloux.html">Bercloux</a>
+            <a href="brands/beauchamp.html">Beauchamp</a>
+            <a href="brands/elpasadordeoro.html">El Pasador de Oro</a>
+            <a href="brands/thoreau.html">Thoreau</a>
+            <a href="brands/marquisdebordeaux.html">Marquis de Bordeaux</a>
+            <a href="brands/alexandresirech.html">Alexandre Sirech</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#facilities" data-i18n="nav_facilities">Facilities</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="legal.html" data-i18n="nav_legal">Legal</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="nav-mobile" id="nav-mobile">
+  <a href="#about" data-i18n="nav_about">About</a>
+  <a href="#brands" data-i18n="nav_brands">Our Brands</a>
+  <div class="nav-mobile-brands">
+    <a href="brands/bellevoye.html">Bellevoye</a>
+    <a href="brands/puravida.html">Pura Vida</a>
+    <a href="brands/lacrobate.html">L'Acrobate</a>
+    <a href="brands/augustinlefort.html">Augustin Lefort</a>
+    <a href="brands/mamaquilla.html">Mama Quilla</a>
+    <a href="brands/embargo.html">Embargo</a>
+    <a href="brands/parati.html">Parati</a>
+    <a href="brands/bercloux.html">Bercloux</a>
+    <a href="brands/beauchamp.html">Beauchamp</a>
+    <a href="brands/elpasadordeoro.html">El Pasador de Oro</a>
+    <a href="brands/thoreau.html">Thoreau</a>
+    <a href="brands/marquisdebordeaux.html">Marquis de Bordeaux</a>
+    <a href="brands/alexandresirech.html">Alexandre Sirech</a>
+  </div>
+  <a href="#facilities" data-i18n="nav_facilities">Facilities</a>
+  <a href="#contact" data-i18n="nav_contact">Contact</a>
+  <a href="legal.html" data-i18n="nav_legal">Legal</a>
+  <div class="nav-mobile-lang">
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="fr">FR</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+  </div>
+</nav>
+
+<!-- =================== HERO =================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <span class="hero-eyebrow" data-i18n="hero_eyebrow">Established 2015 · France</span>
+    <h1 class="hero-title" data-i18n="hero_title">Welcome to LES BIENHEUREUX!</h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">Brewers, distillers, blenders and maturers of joy</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn btn-primary" data-i18n="hero_btn_discover">Discover Our Story</a>
+      <a href="#brands" class="btn btn-outline" data-i18n="hero_btn_brands">Our Brands</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <span class="section-subtitle" data-i18n="about_subtitle">Who We Are</span>
+        <h2 class="section-title" data-i18n="about_title">A French Company Driven by Excellence</h2>
+        <p data-i18n="about_p1">LES BIENHEUREUX — the fortunate — is a French company that grows at the tremendous pace of 40% per annum. Established by Jean MOUEIX and Alexandre SIRECH in 2014 to participate in a French reindustrialisation scheme respectful of people and environment, the company exclusively designs, produces and markets its own brands.</p>
+        <blockquote class="about-highlight" data-i18n="about_highlight">
+          Its strategy is to anticipate and create promising categories before assuming their leadership.
+        </blockquote>
+        <p data-i18n="about_p2">The company's main assets are: a leading position in French whisky and Costa Rican rum, a stable family shareholding structure, high-quality expertise acknowledged by the record number of gold medals in the sector, cutting-edge production facilities in France and Costa Rica (10% of sales in R&D), a small, passionate, and agile team.</p>
+        <div class="about-stats stagger">
+          <div class="about-stat">
+            <span class="number" data-i18n="stat1_n">+40%</span>
+            <span class="label" data-i18n="stat1_l">Annual Growth</span>
+          </div>
+          <div class="about-stat">
+            <span class="number" data-i18n="stat2_n">10%</span>
+            <span class="label" data-i18n="stat2_l">Revenue in R&D</span>
+          </div>
+          <div class="about-stat">
+            <span class="number" data-i18n="stat3_n">#1</span>
+            <span class="label" data-i18n="stat3_l">French Whisky</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-images fade-in">
+        <img src="images/company.webp" alt="Les Bienheureux company" class="about-img-main" />
+        <img src="images/still.png" alt="Distillation still at Les Bienheureux" class="about-img-secondary" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOUNDERS =================== -->
+<section id="founders">
+  <div class="founders-grid">
+    <div class="founders-image fade-in">
+      <img src="images/founder.webp" alt="Founders of Les Bienheureux — Jean Moueix and Alexandre Sirech" />
+    </div>
+    <div class="founders-content fade-up">
+      <span class="section-subtitle" data-i18n="founders_subtitle">Our Founders</span>
+      <h2 data-i18n="founders_title">Visionaries Who Redefined French Spirits</h2>
+      <p data-i18n="founders_p1">Launched in 2015 by Alexandre Sirech (former C.E.O. of HAVANA CLUB) and Jean Moueix (owner of PETRUS), LES BIENHEUREUX revolutionized the spirits market by innovating through excellence.</p>
+      <p data-i18n="founders_p2">In practical terms, our research and development team works with black glasses and only finalizes a product when it stands above its best competitors in a blind tasting. This uncompromising method made BELLEVOYE the leader in French whiskies and EL PASADOR DE ORO the most awarded rum.</p>
+      <p data-i18n="founders_p3">Encouraged by this initial success, the company now invests 10% of its turnover in research and development to keep its momentum going (+86% average annual growth rate over the 5 past years). The company produces its brands in its own facilities in Cognac (France) and Central America.</p>
+      <div class="founders-list">
+        <div class="founder-item">
+          <div class="founder-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="founder-item-content">
+            <h4 data-i18n="founder1_name">Alexandre Sirech</h4>
+            <p data-i18n="founder1_role">Co-Founder & CEO — Former CEO of Havana Club</p>
+          </div>
+        </div>
+        <div class="founder-item">
+          <div class="founder-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="founder-item-content">
+            <h4 data-i18n="founder2_name">Jean Moueix</h4>
+            <p data-i18n="founder2_role">Co-Founder — Owner of Château Pétrus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== VALUES =================== -->
+<section id="values">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:1rem;">
+      <span class="section-subtitle" data-i18n="values_subtitle">Our Philosophy</span>
+      <h2 class="section-title centered" data-i18n="values_title">Founded on Ethics, Aesthetics and Excellence</h2>
+    </div>
+    <div class="values-grid stagger">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 data-i18n="val1_title">Blind Tasting</h3>
+        <p data-i18n="val1_desc">Every product is finalized only when it wins in blind tastings against its best competitors using black glasses — no compromise.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        </div>
+        <h3 data-i18n="val2_title">Innovation</h3>
+        <p data-i18n="val2_desc">We invest 10% of turnover in R&D, constantly pushing boundaries to create the category leaders of tomorrow.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 data-i18n="val3_title">Ethical Values</h3>
+        <p data-i18n="val3_desc">All staff on open-ended contracts with a net minimum wage of €2,000/month. Suppliers treated as customers.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 data-i18n="val4_title">French Roots</h3>
+        <p data-i18n="val4_desc">Fiscally based in France, receiving no subsidies, with our own brewery and distillery in Cognac-Bercloux.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 data-i18n="val5_title">Award-Winning</h3>
+        <p data-i18n="val5_desc">The most gold medals in our sector. BELLEVOYE leads French whiskies, EL PASADOR DE ORO leads premium rum.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 data-i18n="val6_title">Sustainability</h3>
+        <p data-i18n="val6_desc">Production facilities in France and Costa Rica built around respect for people, the environment and local communities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== BRANDS =================== -->
+<section id="brands">
+  <div class="container">
+    <div class="brands-header fade-up">
+      <span class="section-subtitle" data-i18n="brands_subtitle">Portfolio</span>
+      <h2 class="section-title centered" data-i18n="brands_title">Our Exceptional Brands</h2>
+      <p style="color:#666; max-width:600px; margin:1rem auto 0;" data-i18n="brands_desc">From French single malts to Costa Rican rum, each brand is created through our unique blind-tasting excellence methodology.</p>
+    </div>
+    <div class="brands-grid stagger">
+
+      <!-- Bellevoye -->
+      <div class="brand-card" style="--card-accent:#2d2a6e;">
+        <div class="brand-card-image">
+          <img src="images/bellevoye/rouge.png" alt="Bellevoye Rouge whisky bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">French Whisky</span>
+          <h3>Bellevoye</h3>
+          <p>No.1 French whisky. 8 exceptional editions — the most awarded whisky in France.</p>
+          <div class="brand-card-footer">
+            <a href="brands/bellevoye.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>No.1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pura Vida -->
+      <div class="brand-card" style="--card-accent:#c9a14a;">
+        <div class="brand-card-image">
+          <img src="images/puravida/puravida-1.png" alt="Pura Vida rum bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Costa Rican Rum</span>
+          <h3>Pura Vida</h3>
+          <p>Costa Rica's first rum, rooted in local culture. Pentawards 2025 — sustainable packaging.</p>
+          <div class="brand-card-footer">
+            <a href="brands/puravida.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Pentawards 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- L'Acrobate -->
+      <div class="brand-card" style="--card-accent:#1a7a4a;">
+        <div class="brand-card-image">
+          <img src="images/lacrobate/lacrobate-1.jpg" alt="L'Acrobate gin bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Organic Gin</span>
+          <h3>L'Acrobate</h3>
+          <p>100% organic gin, small-batch distilled. Vibrant emerald hue from spirulina infusion.</p>
+          <div class="brand-card-footer">
+            <a href="brands/lacrobate.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">ECO CERT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Augustin Lefort -->
+      <div class="brand-card" style="--card-accent:#3a4a8a;">
+        <div class="brand-card-image">
+          <img src="images/augustinlefort/augustinlefort-1.png" alt="Augustin Lefort whisky bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">French Whisky</span>
+          <h3>Augustin Lefort</h3>
+          <p>100% French blended whisky aged in Cognac casks. Smooth, fruity, accessible excellence.</p>
+          <div class="brand-card-footer">
+            <a href="brands/augustinlefort.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Cognac Aged</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mama Quilla -->
+      <div class="brand-card" style="--card-accent:#4a3a7a;">
+        <div class="brand-card-image">
+          <img src="images/mamaquilla/mamaquilla-1.png" alt="Mama Quilla rum bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Premium Rum</span>
+          <h3>Mama Quilla</h3>
+          <p>Guatemalan Extra Añejo matured in Cognac barrels. Gold medal winner 2022.</p>
+          <div class="brand-card-footer">
+            <a href="brands/mamaquilla.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Gold</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Embargo -->
+      <div class="brand-card" style="--card-accent:#c0572a;">
+        <div class="brand-card-image">
+          <img src="images/embargo/embargo-1.png" alt="Embargo rum bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Rum Blend</span>
+          <h3>Embargo</h3>
+          <p>Trinidad · Martinique · Guatemala — a world first in three-origin rum blending.</p>
+          <div class="brand-card-footer">
+            <a href="brands/embargo.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Grand Gold</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parati -->
+      <div class="brand-card" style="--card-accent:#2a7a4a;">
+        <div class="brand-card-image">
+          <img src="images/parati/parati-1.png" alt="Parati cachaça bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Cachaça</span>
+          <h3>Parati</h3>
+          <p>Artisanal Brazilian cachaça, small-batch distilled. Gold medal at Global Rum Masters 2024.</p>
+          <div class="brand-card-footer">
+            <a href="brands/parati.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Gold 2024</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bercloux -->
+      <div class="brand-card" style="--card-accent:#8a4a2a;">
+        <div class="brand-card-image">
+          <img src="images/bercloux/bercloux-1.png" alt="Bercloux single malt bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Single Malt Whisky</span>
+          <h3>Bercloux</h3>
+          <p>French single malt from Charente — first bottle on the spirits market without a label.</p>
+          <div class="brand-card-footer">
+            <a href="brands/bercloux.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Label-Free</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beauchamp -->
+      <div class="brand-card" style="--card-accent:#7a5a2a;">
+        <div class="brand-card-image">
+          <img src="images/beauchamp/beauchamp-1.png" alt="Beauchamp single malt bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Single Malt Whisky</span>
+          <h3>Beauchamp</h3>
+          <p>Pure malt locavore, unfiltered — finished in ex-Pineau des Charentes barrels at 46%.</p>
+          <div class="brand-card-footer">
+            <a href="brands/beauchamp.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Unfiltered · 46%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- El Pasador de Oro -->
+      <div class="brand-card" style="--card-accent:#7a3e1d;">
+        <div class="brand-card-image">
+          <img src="images/elpasadordeoro/elpasadordeoro-1.png" alt="El Pasador de Oro rum bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Premium Rum</span>
+          <h3>El Pasador de Oro</h3>
+          <p>The reference Guatemalan rum. Most awarded in the premium rum category worldwide.</p>
+          <div class="brand-card-footer">
+            <a href="brands/elpasadordeoro.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Most Awarded</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thoreau -->
+      <div class="brand-card" style="--card-accent:#39FF14;">
+        <div class="brand-card-image">
+          <img src="images/thoreau/thoreau.png" alt="Thoreau spirit bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">New Generation Spirit</span>
+          <h3>Thoreau</h3>
+          <p>Rum + V.S.O.P. Cognac. Spirit of the Year 2022. A tribute to civil disobedience.</p>
+          <div class="brand-card-footer">
+            <a href="brands/thoreau.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquis de Bordeaux -->
+      <div class="brand-card" style="--card-accent:#7B1E2B;">
+        <div class="brand-card-image">
+          <img src="images/marquisdebordeaux/marquisdebordeaux-1.png" alt="Marquis de Bordeaux wine bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Bordeaux Wine</span>
+          <h3>Marquis de Bordeaux</h3>
+          <p>Modern Bordeaux excellence. Merlot 85% · Cabernet Sauvignon 15%. 14% alc./vol.</p>
+          <div class="brand-card-footer">
+            <a href="brands/marquisdebordeaux.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Bordeaux AOC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alexandre Sirech -->
+      <div class="brand-card" style="--card-accent:#7B1E2B;">
+        <div class="brand-card-image">
+          <img src="images/alexandresirech/edition1-1.png" alt="Alexandre Sirech Les Raisins de la Liberté bottle" class="brand-bottle zoomable" />
+        </div>
+        <div class="brand-card-body">
+          <span class="brand-card-category">Wine · Vin de France</span>
+          <h3>Alexandre Sirech</h3>
+          <p>Les Raisins de la Liberté — reviving the inter-regional blending tradition. Merlot & Syrah.</p>
+          <div class="brand-card-footer">
+            <a href="brands/alexandresirech.html" class="brand-card-link">Discover <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <span class="award-tag-sm">Vin de France</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== FACILITIES =================== -->
+<section id="facilities">
+  <div class="container">
+    <div class="facilities-grid">
+      <div class="facilities-images fade-in">
+        <img src="images/company.webp" alt="Les Bienheureux production facility" />
+        <img src="images/still.png" alt="Distillation still" />
+        <img src="images/worker.png" alt="Skilled worker at Les Bienheureux" />
+      </div>
+      <div class="facilities-content fade-up">
+        <span class="section-subtitle" data-i18n="facilities_subtitle">Production</span>
+        <h2 class="section-title" data-i18n="facilities_title">World-Class Facilities</h2>
+        <p data-i18n="facilities_p1">Invested in our own distillery in Bercloux, Charente, and a brewery, our facilities represent the pinnacle of artisanal production at scale.</p>
+        <p data-i18n="facilities_p2">From the historic 1974 Charentais copper pot stills to our state-of-the-art blending laboratories, every detail is crafted for excellence.</p>
+        <ul class="facilities-list" data-i18n-list="facilities_items">
+          <li>Own distillery in Bercloux, Cognac region (France)</li>
+          <li>Own brewery for guaranteed eaux-de-vie quality</li>
+          <li>Production facilities in Costa Rica and Central America</li>
+          <li>Four different stills for maximum distillate complexity</li>
+          <li>Blind tasting lab using Verrenoir black glasses</li>
+          <li>10% of turnover reinvested in R&D annually</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== AWARDS =================== -->
+<section id="awards">
+  <div class="container">
+    <div class="awards-header fade-up">
+      <span class="section-subtitle" data-i18n="awards_subtitle">Recognition</span>
+      <h2 class="section-title centered" data-i18n="awards_title">The Most Awarded Spirits Company</h2>
+    </div>
+    <div class="awards-grid stagger">
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2025</div>
+        <div class="award-title">Gold — World Whiskies Awards</div>
+        <div class="award-brand">Bellevoye Green</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Gold Medal — IWSC</div>
+        <div class="award-brand">Bellevoye Blue</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Master Medal — World Whisky Masters</div>
+        <div class="award-brand">Bellevoye Rouge</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Double Gold — San Francisco World Spirits</div>
+        <div class="award-brand">Bellevoye Prune</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2025</div>
+        <div class="award-title">Bronze — Pentawards International Packaging</div>
+        <div class="award-brand">Pura Vida Rum</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2024</div>
+        <div class="award-title">Gold — Global Rum & Cachaça Masters</div>
+        <div class="award-brand">Parati Cachaça</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2023</div>
+        <div class="award-title">Master Medal — World Whisky Masters</div>
+        <div class="award-brand">Bellevoye Orange</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2022</div>
+        <div class="award-title">Spirit of the Year — Cavistes & E-Commerce</div>
+        <div class="award-brand">Thoreau</div>
+      </div>
+      <div class="award-card">
+        <div style="margin-bottom:0.8rem;"><svg viewBox="0 0 24 24" fill="#c9a14a" width="24" height="24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="award-year">2021</div>
+        <div class="award-title">Gold — Rum and Cachaça Masters</div>
+        <div class="award-brand">El Pasador de Oro XO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <span class="section-subtitle" data-i18n="contact_subtitle">Get In Touch</span>
+        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+        <p data-i18n="contact_p">Whether you are a distributor, retailer, or press representative, we would be delighted to hear from you.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="contact-item-text">
+              <strong>Address</strong>
+              <span data-i18n="contact_address">10, avenue de la Grande Armée, 75017 PARIS, France</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+            <div class="contact-item-text">
+              <strong>Phone</strong>
+              <span data-i18n="contact_phone">+33 5 56 88 32 92</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <span data-i18n="contact_email">contact@lesbienheureux.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/Bienheureuxspirits/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/les.bienheureux/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCzgL5b-8trb-qwcadX6eyOw/featured" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form fade-up">
+        <h3 data-i18n="form_title">Send a Message</h3>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" data-i18n="form_name">Full Name</label>
+              <input type="text" id="name" name="name" required data-i18n-placeholder="form_name" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form_email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="Email Address" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject" data-i18n="form_subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="distribution">Distribution</option>
+              <option value="press">Press</option>
+              <option value="retail">Retail</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form_message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="images/logo.svg" alt="Les Bienheureux" class="footer-brand-logo" />
+          <p class="footer-desc" data-i18n="footer_desc">The French company revolutionizing the spirits market through innovation, excellence, and ethical production since 2015.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/Bienheureuxspirits/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/les.bienheureux/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCzgL5b-8trb-qwcadX6eyOw/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_brands">Our Brands</h4>
+          <ul>
+            <li><a href="brands/bellevoye.html">Bellevoye</a></li>
+            <li><a href="brands/puravida.html">Pura Vida</a></li>
+            <li><a href="brands/lacrobate.html">L'Acrobate</a></li>
+            <li><a href="brands/augustinlefort.html">Augustin Lefort</a></li>
+            <li><a href="brands/mamaquilla.html">Mama Quilla</a></li>
+            <li><a href="brands/embargo.html">Embargo</a></li>
+            <li><a href="brands/parati.html">Parati</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>&nbsp;</h4>
+          <ul>
+            <li><a href="brands/bercloux.html">Bercloux</a></li>
+            <li><a href="brands/beauchamp.html">Beauchamp</a></li>
+            <li><a href="brands/elpasadordeoro.html">El Pasador de Oro</a></li>
+            <li><a href="brands/thoreau.html">Thoreau</a></li>
+            <li><a href="brands/marquisdebordeaux.html">Marquis de Bordeaux</a></li>
+            <li><a href="brands/alexandresirech.html">Alexandre Sirech</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_company">Company</h4>
+          <ul>
+            <li><a href="#about" data-i18n="footer_about">About Us</a></li>
+            <li><a href="#contact" data-i18n="footer_contact">Contact</a></li>
+            <li><a href="legal.html" data-i18n="footer_legal">Legal Notice</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p data-i18n="footer_rights">© 2025 LES BIENHEUREUX. All rights reserved.</p>
+      <p><span data-i18n="footer_dev">Website by</span> <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a></p>
+    </div>
+  </div>
+  <div class="footer-warning">
+    <div class="container">
+      <p><strong data-i18n="alcohol_warning">ALCOHOL ABUSE IS DANGEROUS FOR YOUR HEALTH. DRINK RESPONSIBLY.</strong></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
