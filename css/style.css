@@ -2113,7 +2113,7 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../images/company.webp') center/cover no-repeat;
+  background: url('../images/bellevoye/portfolio.webp') center/cover no-repeat;
   opacity: 0.06;
   pointer-events: none;
 }
