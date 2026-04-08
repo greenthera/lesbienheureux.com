@@ -82,7 +82,7 @@
 
     <nav class="nav-mobile" id="nav-mobile">
       <a href="../index.html">Home</a>
-      <a href="../index.html#brands">Our Brands</a>
+      <button class="nav-mobile-brands-toggle">Our Brands <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="nav-mobile-brands">
         <a href="bellevoye.html">Bellevoye</a>
         <a href="puravida.html">Pura Vida</a>
@@ -109,15 +109,7 @@
     <section class="brand-hero" style="position: relative">
       <div
         class="brand-hero-bg"
-        style="
-          position: absolute;
-          inset: 0;
-          background-image: url('../images/thoreau/thoreau-1.png');
-          background-size: cover;
-          background-position: center;
-          opacity: 0.88;
-          z-index: 0;
-        "
+        style="background-image: url('../images/thoreau/thoreau-1.png')"
         data-lightbox-src="../images/thoreau/thoreau-1.png"
       ></div>
       <div class="container brand-hero-content" style="position: relative; z-index: 2">
@@ -131,8 +123,8 @@
           ><span>Thoreau</span>
         </div>
         <img src="../images/thoreau/logo.png" alt="Thoreau Spirit" class="brand-hero-logo" />
-        <h1 style="color: #39ff14">The Free Spirit.</h1>
-        <p class="tagline" style="color: rgba(57, 255, 20, 0.7)">
+        <h1>The Free Spirit.</h1>
+        <p class="tagline">
           The New Generation Spirit · Rum + Cognac · Spirit of the Year 2022 · 40% alc./vol.
         </p>
         <div class="award-tags-row" style="margin-top: 1.2rem">
@@ -167,7 +159,7 @@
       </div>
     </div>
 
-    <section class="brand-about" style="background: #0a0a0a">
+    <section class="brand-about">
       <div class="container">
         <div class="brand-about-grid">
           <div class="brand-image-wrap fade-in">
@@ -175,11 +167,8 @@
               <div class="gallery-item" data-lightbox-src="../images/thoreau/thoreau-1.png">
                 <div class="gallery-item-bg product ratio-3-4" style="background-image: url('../images/thoreau/thoreau-1.png')"></div>
               </div>
-              <div class="gallery-item" data-lightbox-src="../images/thoreau/thoreau.png">
-                <div class="gallery-item-bg product ratio-3-4" style="background-image: url('../images/thoreau/thoreau.png')"></div>
-              </div>
               <div class="gallery-item" data-lightbox-src="../images/thoreau/thoreau-2.png">
-                <div class="gallery-item-bg product ratio-1-1" style="background-image: url('../images/thoreau/thoreau-2.png')"></div>
+                <div class="gallery-item-bg product ratio-3-4" style="background-image: url('../images/thoreau/thoreau-2.png')"></div>
               </div>
               <div class="gallery-item" data-lightbox-src="../images/thoreau/thoreau-3.png">
                 <div class="gallery-item-bg product ratio-1-1" style="background-image: url('../images/thoreau/thoreau-3.png')"></div>
@@ -187,144 +176,63 @@
             </div>
           </div>
           <div class="brand-text fade-up">
-            <span class="section-subtitle" style="color: #39ff14">New Generation Spirit · 40%</span>
-            <h2
-              style="
-                color: #39ff14;
-                font-family: var(--font-serif);
-                font-size: 2rem;
-                margin-bottom: 1.2rem;
-              "
-            >
-              ABSOLUTE BLENDING FREEDOM
-            </h2>
-            <p style="color: rgba(255, 255, 255, 0.8)">
-              THOREAU is a unique spirit made from Guatemalan rums and V.S.O.P. Cognac. It was
-              created as a tribute to <strong style="color: #39ff14">Henry David Thoreau</strong>, a
-              19th-century American philosopher, poet, and naturalist: the father of civil
-              disobedience.
+            <span class="section-subtitle" style="color: #2a9e18">New Generation Spirit · 40%</span>
+            <h2 class="section-title" style="color: #2a9e18">Absolute Blending Freedom</h2>
+            <p>
+              THOREAU is a unique spirit made from Guatemalan rums and V.S.O.P. Cognac. Created as a
+              tribute to <strong>Henry David Thoreau</strong> — 19th-century philosopher, poet, and
+              naturalist: the father of civil disobedience.
             </p>
-            <p style="color: rgba(255, 255, 255, 0.8)">
-              THOREAU's priority goes to
-              <strong style="color: #39ff14">taste over appellation</strong>. The result confirms
-              the adage of all great blends: <strong style="color: #39ff14">1+1=3</strong>.
+            <p>
+              THOREAU's priority goes to <strong>taste over appellation</strong>. The result confirms
+              the adage of all great blends: <strong>1+1=3</strong>.
             </p>
             <blockquote
               style="
-                border-left: 3px solid #39ff14;
+                border-left: 3px solid #2a9e18;
                 padding: 1rem 1.5rem;
                 margin: 1.5rem 0;
-                background: rgba(57, 255, 20, 0.05);
+                background: rgba(42, 158, 24, 0.06);
+                border-radius: 0 12px 12px 0;
               "
             >
-              <p
-                style="
-                  color: rgba(255, 255, 255, 0.9);
-                  font-style: italic;
-                  font-family: var(--font-serif);
-                  font-size: 1.05rem;
-                "
-              >
-                "With 70% rum and 30% Cognac, the exotic banana and 'crème brûlée' aromas of rum
-                combine with the bitter orange notes of Cognac. It is the elegance of Catherine
+              <p style="font-style: italic; font-family: var(--font-serif); font-size: 1.05rem; color: #333">
+                "With 70% rum and 30% Cognac, the exotic banana and crème brûlée aromas of rum
+                combine with the bitter orange notes of Cognac. The elegance of Catherine
                 Deneuve with the ardour of Penélope Cruz."
               </p>
-              <footer style="color: #39ff14; font-size: 0.82rem; margin-top: 0.5rem">
+              <footer style="color: #2a9e18; font-size: 0.82rem; margin-top: 0.5rem; font-family: var(--font-sans); font-weight: 600">
                 — Alexandre Sirech, CEO
               </footer>
             </blockquote>
-            <p style="color: rgba(255, 255, 255, 0.8)">
-              The neck labels feature one of fourteen quotes by Henry David Thoreau. On this bottle:
+            <p style="color: #555; font-style: italic; font-family: var(--font-serif); font-size: 1rem; border-left: 2px solid rgba(42,158,24,0.3); padding-left: 1rem; margin: 1rem 0">
+              "The only obligation I have a right to assume is to do at any time what I think right." — H.D. Thoreau
             </p>
-            <p style="color: #39ff14; font-style: italic; font-family: var(--font-serif)">
-              "The only obligation I have a right to assume is to do at any time what I think
-              right." — H.D. Thoreau.
-            </p>
-            <div
-              style="
-                background: rgba(57, 255, 20, 0.1);
-                border: 1px solid rgba(57, 255, 20, 0.3);
-                padding: 1.5rem;
-                border-radius: 16px;
-                margin-top: 1.5rem;
-              "
-            >
-              <strong style="color: #39ff14; font-size: 0.9rem">Tasting Notes</strong><br />
-              <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin-top: 0.5rem">
-                <strong style="color: rgba(255, 255, 255, 0.6)">Nose:</strong> Crème brûlée,
-                cinnamon, and orange blossom.
-              </p>
-              <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem">
-                <strong style="color: rgba(255, 255, 255, 0.6)">Palate:</strong> Incredibly smooth
-                and balanced, richness of walnut oil, silky and melting texture.
-              </p>
-              <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem">
-                <strong style="color: rgba(255, 255, 255, 0.6)">Finish:</strong> Persistent with
-                crystallized fruit and hazelnut.
-              </p>
-            </div>
-            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap">
-              <div
-                style="
-                  padding: 1rem 1.5rem;
-                  background: rgba(57, 255, 20, 0.1);
-                  border: 1px solid rgba(57, 255, 20, 0.3);
-                  border-radius: 16px;
-                  text-align: center;
-                  flex: 1;
-                "
-              >
-                <div
-                  style="
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    color: #39ff14;
-                    font-family: var(--font-serif);
-                  "
-                >
-                  2022
+            <div style="background: var(--off-white); border: 1px solid rgba(42,158,24,0.2); padding: 1.5rem; border-radius: 16px; margin-top: 1.5rem">
+              <strong style="color: #2a9e18; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.8rem">Tasting Notes</strong>
+              <div class="tasting-notes" style="margin-top: 0">
+                <div class="tasting-item">
+                  <strong>Nose</strong>
+                  <p>Crème brûlée, cinnamon, and orange blossom.</p>
                 </div>
-                <div
-                  style="
-                    font-size: 0.72rem;
-                    color: rgba(255, 255, 255, 0.5);
-                    text-transform: uppercase;
-                    letter-spacing: 0.08em;
-                  "
-                >
-                  Spirit of the Year
+                <div class="tasting-item">
+                  <strong>Palate</strong>
+                  <p>Incredibly smooth and balanced — richness of walnut oil, silky and melting texture.</p>
+                </div>
+                <div class="tasting-item">
+                  <strong>Finish</strong>
+                  <p>Persistent with crystallized fruit and hazelnut.</p>
                 </div>
               </div>
-              <div
-                style="
-                  padding: 1rem 1.5rem;
-                  background: rgba(57, 255, 20, 0.1);
-                  border: 1px solid rgba(57, 255, 20, 0.3);
-                  border-radius: 16px;
-                  text-align: center;
-                  flex: 1;
-                "
-              >
-                <div
-                  style="
-                    font-size: 1rem;
-                    font-weight: 700;
-                    color: #39ff14;
-                    font-family: var(--font-serif);
-                  "
-                >
-                  GOLD
-                </div>
-                <div
-                  style="
-                    font-size: 0.72rem;
-                    color: rgba(255, 255, 255, 0.5);
-                    text-transform: uppercase;
-                    letter-spacing: 0.08em;
-                  "
-                >
-                  Global Spirits Masters 2021
-                </div>
+            </div>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap">
+              <div style="padding: 1rem 1.5rem; background: rgba(42,158,24,0.07); border: 1px solid rgba(42,158,24,0.2); border-radius: 16px; text-align: center; flex: 1">
+                <div style="font-size: 1.5rem; font-weight: 700; color: #2a9e18; font-family: var(--font-serif)">2022</div>
+                <div style="font-size: 0.72rem; color: var(--grey); text-transform: uppercase; letter-spacing: 0.08em">Spirit of the Year</div>
+              </div>
+              <div style="padding: 1rem 1.5rem; background: rgba(42,158,24,0.07); border: 1px solid rgba(42,158,24,0.2); border-radius: 16px; text-align: center; flex: 1">
+                <div style="font-size: 1rem; font-weight: 700; color: #2a9e18; font-family: var(--font-serif)">GOLD</div>
+                <div style="font-size: 0.72rem; color: var(--grey); text-transform: uppercase; letter-spacing: 0.08em">Global Spirits Masters 2021</div>
               </div>
             </div>
           </div>
@@ -332,27 +240,26 @@
       </div>
     </section>
 
-    <section style="background: #060a06; padding: 3rem 0">
+    <section style="background: var(--off-white); padding: 3rem 0; border-top: 1px solid rgba(0,0,0,0.05)">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center">
           <img
             src="../images/thoreau/thoreau-2.png"
             alt="Thoreau bottle"
-            style="max-width: 300px; margin: 0 auto; display: block"
+            style="max-width: 300px; margin: 0 auto; display: block; filter: drop-shadow(0 16px 40px rgba(0,0,0,0.15))"
           />
           <div>
-            <h3 style="color: #39ff14; font-size: 1.3rem; margin-bottom: 1rem">
+            <span class="section-subtitle" style="color: #2a9e18">Design</span>
+            <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem; font-family: var(--font-serif)">
               A Stunning Design for a Unique Spirit
             </h3>
-            <p style="color: rgba(255, 255, 255, 0.7)">
-              This exceptional product deserved a stunning design: the elegant carafe is boldly
-              emblazoned with a
-              <strong style="color: #39ff14">fluorescent green modern label</strong>.
+            <p>
+              This exceptional product deserved a bold identity: the elegant carafe is emblazoned with a
+              <strong>fluorescent green modern label</strong> — unmistakable on any shelf.
             </p>
-            <p style="color: rgba(255, 255, 255, 0.7); margin-top: 1rem">
-              The tribute to the philosopher continues on the neck labels, where one of the fourteen
-              quotes by the author is featured — resolutely provocative and distinctly new
-              generation.
+            <p style="margin-top: 0.8rem">
+              The tribute to the philosopher continues on the neck labels, where one of fourteen
+              quotes by the author is featured — resolutely provocative and distinctly new generation.
             </p>
           </div>
         </div>
@@ -390,9 +297,9 @@
       </div>
       <div class="container">
         <div class="footer-bottom">
-          <p>© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p>© 2015 – 2025 LES BIENHEUREUX. All rights reserved.</p>
           <p>
-            Website by
+            Designed and Developed by
             <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
           </p>
         </div>

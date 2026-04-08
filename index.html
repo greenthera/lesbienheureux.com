@@ -174,7 +174,7 @@
     <!-- Mobile Menu -->
     <nav class="nav-mobile" id="nav-mobile">
       <a href="#about" data-i18n="nav_about">About</a>
-      <a href="#brands" data-i18n="nav_brands">Our Brands</a>
+      <button class="nav-mobile-brands-toggle">Our Brands <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="nav-mobile-brands">
         <a href="brands/bellevoye.html">Bellevoye</a>
         <a href="brands/puravida.html">Pura Vida</a>
@@ -850,114 +850,60 @@
           </div>
         </div>
 
-        <div class="awards-grid stagger">
-          <!-- Gold -->
-          <div class="award-card medal-gold">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c9a14a" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge gold">★ Gold</span>
-            <div class="award-year">2025</div>
-            <div class="award-title">World Whiskies Awards</div>
-            <div class="award-brand">Bellevoye Green</div>
+        <div class="awards-list fade-up">
+          <div class="awards-list-item">
+            <span class="awards-list-year">2025</span>
+            <span class="awards-list-name">World Whiskies Awards</span>
+            <span class="awards-list-medal gold">★ Gold</span>
+            <span class="awards-list-brand">Bellevoye Green</span>
           </div>
-          <!-- Gold -->
-          <div class="award-card medal-gold">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c9a14a" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge gold">★ Gold</span>
-            <div class="award-year">2024</div>
-            <div class="award-title">IWSC</div>
-            <div class="award-brand">Bellevoye Blue</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2025</span>
+            <span class="awards-list-name">Pentawards International Packaging</span>
+            <span class="awards-list-medal bronze">★ Bronze</span>
+            <span class="awards-list-brand">Pura Vida Rum</span>
           </div>
-          <!-- Master -->
-          <div class="award-card medal-master">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c0d0e8" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge master">★ Master</span>
-            <div class="award-year">2024</div>
-            <div class="award-title">World Whisky Masters</div>
-            <div class="award-brand">Bellevoye Rouge</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2024</span>
+            <span class="awards-list-name">IWSC</span>
+            <span class="awards-list-medal gold">★ Gold</span>
+            <span class="awards-list-brand">Bellevoye Blue</span>
           </div>
-          <!-- Grand Gold -->
-          <div class="award-card medal-grand">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#fff0b0" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge grand">★★ Double Gold</span>
-            <div class="award-year">2024</div>
-            <div class="award-title">San Francisco World Spirits</div>
-            <div class="award-brand">Bellevoye Prune</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2024</span>
+            <span class="awards-list-name">World Whisky Masters</span>
+            <span class="awards-list-medal master">★ Master</span>
+            <span class="awards-list-brand">Bellevoye Rouge</span>
           </div>
-          <!-- Bronze -->
-          <div class="award-card medal-bronze">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c8a080" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge bronze">★ Bronze</span>
-            <div class="award-year">2025</div>
-            <div class="award-title">Pentawards International Packaging</div>
-            <div class="award-brand">Pura Vida Rum</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2024</span>
+            <span class="awards-list-name">San Francisco World Spirits</span>
+            <span class="awards-list-medal grand">★★ Double Gold</span>
+            <span class="awards-list-brand">Bellevoye Prune</span>
           </div>
-          <!-- Gold -->
-          <div class="award-card medal-gold">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c9a14a" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge gold">★ Gold</span>
-            <div class="award-year">2024</div>
-            <div class="award-title">Global Rum &amp; Cachaça Masters</div>
-            <div class="award-brand">Parati Cachaça</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2024</span>
+            <span class="awards-list-name">Global Rum &amp; Cachaça Masters</span>
+            <span class="awards-list-medal gold">★ Gold</span>
+            <span class="awards-list-brand">Parati Cachaça</span>
           </div>
-          <!-- Master -->
-          <div class="award-card medal-master">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c0d0e8" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge master">★ Master</span>
-            <div class="award-year">2023</div>
-            <div class="award-title">World Whisky Masters</div>
-            <div class="award-brand">Bellevoye Orange</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2023</span>
+            <span class="awards-list-name">World Whisky Masters</span>
+            <span class="awards-list-medal master">★ Master</span>
+            <span class="awards-list-brand">Bellevoye Orange</span>
           </div>
-          <!-- Gold -->
-          <div class="award-card medal-gold">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c9a14a" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge gold">★ Spirit of the Year</span>
-            <div class="award-year">2022</div>
-            <div class="award-title">Cavistes &amp; E-Commerce</div>
-            <div class="award-brand">Thoreau</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2022</span>
+            <span class="awards-list-name">Cavistes &amp; E-Commerce</span>
+            <span class="awards-list-medal spirit">★ Spirit of the Year</span>
+            <span class="awards-list-brand">Thoreau</span>
           </div>
-          <!-- Gold -->
-          <div class="award-card medal-gold">
-            <div class="award-icon-large">
-              <svg viewBox="0 0 24 24" fill="#c9a14a" width="40" height="40">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-              </svg>
-            </div>
-            <span class="award-medal-badge gold">★ Gold</span>
-            <div class="award-year">2021</div>
-            <div class="award-title">Rum &amp; Cachaça Masters</div>
-            <div class="award-brand">El Pasador de Oro XO</div>
+          <div class="awards-list-item">
+            <span class="awards-list-year">2021</span>
+            <span class="awards-list-name">Rum &amp; Cachaça Masters</span>
+            <span class="awards-list-medal gold">★ Gold</span>
+            <span class="awards-list-brand">El Pasador de Oro XO</span>
           </div>
         </div>
       </div>
@@ -1202,9 +1148,9 @@
       </div>
       <div class="container">
         <div class="footer-bottom">
-          <p data-i18n="footer_rights">© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p data-i18n="footer_rights">© 2015 – 2025 LES BIENHEUREUX. All rights reserved.</p>
           <p>
-            <span data-i18n="footer_dev">Website by</span>
+            <span data-i18n="footer_dev">Designed and Developed by</span>
             <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
           </p>
         </div>

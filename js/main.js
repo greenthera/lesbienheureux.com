@@ -83,8 +83,8 @@ const i18n = {
     footer_legal: 'Legal Notice',
     footer_about: 'About Us',
     footer_contact: 'Contact',
-    footer_rights: '© 2025 LES BIENHEUREUX. All rights reserved.',
-    footer_dev: 'Website by',
+    footer_rights: '© 2015 – 2025 LES BIENHEUREUX. All rights reserved.',
+    footer_dev: 'Designed and Developed by',
     age_gate_title: 'Age Verification',
     age_gate_text: 'You must be of legal drinking age in your country to enter this site.',
     age_gate_yes: 'Yes, I am of legal age',
@@ -177,8 +177,8 @@ const i18n = {
     footer_legal: 'Mentions légales',
     footer_about: 'À propos',
     footer_contact: 'Contact',
-    footer_rights: '© 2025 LES BIENHEUREUX. Tous droits réservés.',
-    footer_dev: 'Site réalisé par',
+    footer_rights: '© 2015 – 2025 LES BIENHEUREUX. Tous droits réservés.',
+    footer_dev: 'Conçu et Développé par',
     age_gate_title: 'Vérification d\'âge',
     age_gate_text: 'Vous devez avoir l\'âge légal pour consommer de l\'alcool dans votre pays pour accéder à ce site.',
     age_gate_yes: 'Oui, j\'ai l\'âge légal',
@@ -271,8 +271,8 @@ const i18n = {
     footer_legal: 'Aviso legal',
     footer_about: 'Sobre nosotros',
     footer_contact: 'Contacto',
-    footer_rights: '© 2025 LES BIENHEUREUX. Todos los derechos reservados.',
-    footer_dev: 'Sitio web por',
+    footer_rights: '© 2015 – 2025 LES BIENHEUREUX. Todos los derechos reservados.',
+    footer_dev: 'Diseñado y Desarrollado por',
     age_gate_title: 'Verificación de edad',
     age_gate_text: 'Debes tener la edad legal para consumir alcohol en tu país para acceder a este sitio.',
     age_gate_yes: 'Sí, tengo la edad legal',
@@ -374,7 +374,7 @@ function initNavbar() {
       mobileMenu.classList.toggle('open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
-    // Close on link click
+    // Close on link click (but not toggle buttons)
     mobileMenu.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         hamburger.classList.remove('open');
@@ -382,7 +382,20 @@ function initNavbar() {
         document.body.style.overflow = '';
       });
     });
+    // Collapsible brands section
+    const brandsToggle = mobileMenu.querySelector('.nav-mobile-brands-toggle');
+    const brandsPanel = mobileMenu.querySelector('.nav-mobile-brands');
+    if (brandsToggle && brandsPanel) {
+      brandsToggle.addEventListener('click', () => {
+        brandsToggle.classList.toggle('open');
+        brandsPanel.classList.toggle('open');
+      });
+    }
   }
+  // Dynamic copyright year
+  document.querySelectorAll('.footer-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
 }
 
 /* === BACK TO TOP === */

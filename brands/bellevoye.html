@@ -105,7 +105,19 @@
 
     <nav class="nav-mobile" id="nav-mobile">
       <a href="../index.html">Home</a>
-      <a href="../index.html#brands">Our Brands</a>
+      <button class="nav-mobile-brands-toggle">
+        Our Brands
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          width="16"
+          height="16"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </button>
       <div class="nav-mobile-brands">
         <a href="bellevoye.html">Bellevoye</a>
         <a href="puravida.html">Pura Vida</a>
@@ -133,32 +145,10 @@
     <section class="brand-hero" style="position: relative">
       <div
         class="brand-hero-bg"
-        style="
-          position: absolute;
-          inset: 0;
-          background-image: url('../images/bellevoye/portfolio.webp');
-          background-size: cover;
-          background-position: center;
-          opacity: 0.82;
-          z-index: 0;
-        "
-        data-lightbox-src="../images/bellevoye/portfolio.webp"
+        style="background-image: url('../images/bellevoye/blanc.png')"
+        data-lightbox-src="../images/bellevoye/blanc.png"
       ></div>
-      <div
-        class="hero-overlay"
-        style="
-          background: linear-gradient(
-            135deg,
-            rgba(26, 24, 64, 0.9) 0%,
-            rgba(45, 42, 110, 0.7) 100%
-          );
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-          pointer-events: none;
-        "
-      ></div>
-      <div class="container brand-hero-content" style="position: relative; z-index: 2">
+      <div class="container brand-hero-content" style="position: relative; z-index: 4">
         <div class="brand-breadcrumb">
           <a href="../index.html">Home</a>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -206,12 +196,24 @@
     <!-- SPECS BAR -->
     <div class="brand-specs-bar">
       <div class="container brand-specs-inner">
-        <div class="brand-spec-item"><span class="spec-label">Category</span><span class="spec-value">French Whisky</span></div>
-        <div class="brand-spec-item"><span class="spec-label">Origin</span><span class="spec-value">France</span></div>
-        <div class="brand-spec-item"><span class="spec-label">ABV</span><span class="spec-value">40–43%</span></div>
-        <div class="brand-spec-item"><span class="spec-label">Editions</span><span class="spec-value">8 Expressions</span></div>
-        <div class="brand-spec-item"><span class="spec-label">Maturation</span><span class="spec-value">French Oak Casks</span></div>
-        <div class="brand-spec-item"><span class="spec-label">Status</span><span class="spec-value">No.1 French Whisky</span></div>
+        <div class="brand-spec-item">
+          <span class="spec-label">Category</span><span class="spec-value">French Whisky</span>
+        </div>
+        <div class="brand-spec-item">
+          <span class="spec-label">Origin</span><span class="spec-value">France</span>
+        </div>
+        <div class="brand-spec-item">
+          <span class="spec-label">ABV</span><span class="spec-value">40–43%</span>
+        </div>
+        <div class="brand-spec-item">
+          <span class="spec-label">Editions</span><span class="spec-value">8 Expressions</span>
+        </div>
+        <div class="brand-spec-item">
+          <span class="spec-label">Maturation</span><span class="spec-value">French Oak Casks</span>
+        </div>
+        <div class="brand-spec-item">
+          <span class="spec-label">Status</span><span class="spec-value">No.1 French Whisky</span>
+        </div>
       </div>
     </div>
 
@@ -752,9 +754,9 @@
       </div>
       <div class="container">
         <div class="footer-bottom">
-          <p>© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p>© 2015 – 2025 LES BIENHEUREUX. All rights reserved.</p>
           <p>
-            Website by
+            Designed and Developed by
             <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
           </p>
         </div>

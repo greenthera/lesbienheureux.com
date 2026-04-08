@@ -79,7 +79,7 @@
 
     <nav class="nav-mobile" id="nav-mobile">
       <a href="../index.html">Home</a>
-      <a href="../index.html#brands">Our Brands</a>
+      <button class="nav-mobile-brands-toggle">Our Brands <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="nav-mobile-brands">
         <a href="bellevoye.html">Bellevoye</a>
         <a href="puravida.html">Pura Vida</a>
@@ -106,16 +106,8 @@
     <section class="brand-hero" style="position: relative">
       <div
         class="brand-hero-bg"
-        style="
-          position: absolute;
-          inset: 0;
-          background-image: url('../images/lacrobate/lacrobate-1.jpg');
-          background-size: cover;
-          background-position: center;
-          opacity: 0.8;
-          z-index: 0;
-        "
-        data-lightbox-src="../images/lacrobate/lacrobate-1.jpg"
+        style="background-image: url('../images/lacrobate/lacrobate-3.png')"
+        data-lightbox-src="../images/lacrobate/lacrobate-3.png"
       ></div>
       <div class="container brand-hero-content" style="position: relative; z-index: 2">
         <div class="brand-breadcrumb">
@@ -148,23 +140,21 @@
     <section class="brand-about">
       <div class="container">
         <div class="brand-about-grid">
-          <div
-            class="brand-image-wrap fade-in"
-            style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center"
-          >
-            <img
-              src="../images/lacrobate/lacrobate-1.jpg"
-              alt="L'Acrobate Gin"
-              style="width: 100%; border-radius: 16px; object-fit: cover; height: 320px"
-            />
-            <img
-              src="../images/lacrobate/lacrobate-2.jpg"
-              alt="L'Acrobate Gin"
-              style="width: 100%; border-radius: 16px; object-fit: cover; height: 320px"
-            />
+          <div class="brand-image-wrap fade-in">
+            <div class="brand-gallery-masonry">
+              <div class="gallery-item" data-lightbox-src="../images/lacrobate/lacrobate-1.jpg">
+                <div class="gallery-item-bg ratio-4-3" style="background-image: url('../images/lacrobate/lacrobate-1.jpg')"></div>
+              </div>
+              <div class="gallery-item" data-lightbox-src="../images/lacrobate/lacrobate-3.png">
+                <div class="gallery-item-bg product ratio-3-4" style="background-image: url('../images/lacrobate/lacrobate-3.png')"></div>
+              </div>
+              <div class="gallery-item" data-lightbox-src="../images/lacrobate/lacrobate-2.jpg">
+                <div class="gallery-item-bg ratio-4-3" style="background-image: url('../images/lacrobate/lacrobate-2.jpg')"></div>
+              </div>
+            </div>
           </div>
           <div class="brand-text fade-up">
-            <span class="section-subtitle">Organic Gin · 44%</span>
+            <span class="section-subtitle" style="color: #009a9c">Organic Gin · 44%</span>
             <h2 class="section-title" style="color: #009a9c">A Contemporary Creation</h2>
             <p>
               L'Acrobate Gin emerges as a testament to creative artistry and meticulous
@@ -322,9 +312,9 @@
       </div>
       <div class="container">
         <div class="footer-bottom">
-          <p>© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p>© 2015 – 2025 LES BIENHEUREUX. All rights reserved.</p>
           <p>
-            Website by
+            Designed and Developed by
             <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
           </p>
         </div>

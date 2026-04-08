@@ -79,7 +79,7 @@
 
     <nav class="nav-mobile" id="nav-mobile">
       <a href="../index.html">Home</a>
-      <a href="../index.html#brands">Our Brands</a>
+      <button class="nav-mobile-brands-toggle">Our Brands <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="nav-mobile-brands">
         <a href="bellevoye.html">Bellevoye</a>
         <a href="puravida.html">Pura Vida</a>
@@ -106,16 +106,8 @@
     <section class="brand-hero" style="position: relative">
       <div
         class="brand-hero-bg"
-        style="
-          position: absolute;
-          inset: 0;
-          background-image: url('../images/embargo/embargo-1.png');
-          background-size: cover;
-          background-position: center;
-          opacity: 0.82;
-          z-index: 0;
-        "
-        data-lightbox-src="../images/embargo/embargo-1.png"
+        style="background-image: url('../images/embargo/edition4-1.png')"
+        data-lightbox-src="../images/embargo/edition4-1.png"
       ></div>
       <div class="container brand-hero-content" style="position: relative; z-index: 2">
         <div class="brand-breadcrumb">
@@ -243,43 +235,15 @@
       <div class="container">
         <div class="text-center fade-up">
           <span class="section-subtitle">The Collection</span>
-          <h2 class="section-title centered" style="color: #fd4c2b">5 Editions</h2>
+          <h2 class="section-title centered" style="color: #fd4c2b">4 Editions</h2>
         </div>
-        <div
-          style="
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 3rem;
-          "
-          class="stagger"
-        >
+        <div class="editions-grid stagger" style="grid-template-columns: repeat(4, 1fr)">
           <div class="edition-card">
-            <div
-              class="edition-card-image"
-              style="
-                background: #fff8f5;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 0.3rem;
-                align-items: center;
-                padding: 1rem;
-              "
-            >
-              <img
-                src="../images/embargo/edition1-1.png"
-                alt="Embargo Blanco"
-                style="width: 100%; object-fit: contain"
-              />
+            <div class="edition-card-image" style="background: #fff8f5">
               <img
                 src="../images/embargo/edition1-2.png"
                 alt="Embargo Blanco"
-                style="width: 100%; object-fit: contain"
-              />
-              <img
-                src="../images/embargo/edition1-3.png"
-                alt="Embargo Blanco"
-                style="width: 100%; object-fit: contain"
+                style="max-height: 200px; width: auto; object-fit: contain"
               />
             </div>
             <div class="edition-card-body">
@@ -382,7 +346,7 @@
             </div>
           </div>
 
-          <div class="edition-card" style="grid-column: span 2">
+          <div class="edition-card">
             <div class="edition-card-image" style="background: #fff5f0">
               <img
                 src="../images/embargo/edition4-1.png"
@@ -399,10 +363,7 @@
                 Winner of the Great Gold Medal at the Concours de Bruxelles. A blend of the best
                 barrels in the cellar.
               </p>
-              <div
-                class="tasting-notes"
-                style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem"
-              >
+              <div class="tasting-notes">
                 <div class="tasting-item">
                   <strong>Nose</strong>
                   <p>Simple, balanced, mildly spicy.</p>
@@ -416,44 +377,6 @@
                   <p>Harmonious.</p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="edition-card">
-            <div
-              class="edition-card-image"
-              style="
-                background: #fff5f0;
-                min-height: 120px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div style="text-align: center; padding: 2rem; color: #fd4c2b">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  width="48"
-                  height="48"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-                <div style="font-size: 0.8rem; margin-top: 0.5rem">Edition 5 Coming Soon</div>
-              </div>
-            </div>
-            <div class="edition-card-body">
-              <span class="edition-badge" style="background: rgba(253, 76, 43, 0.1); color: #fd4c2b"
-                >RESERVE · TBA</span
-              >
-              <h3 style="color: #fd4c2b">Edition 5</h3>
-              <p style="font-size: 0.82rem; color: #555">
-                A new exceptional edition from the Embargo collection. Coming soon.
-              </p>
             </div>
           </div>
         </div>
@@ -491,9 +414,9 @@
       </div>
       <div class="container">
         <div class="footer-bottom">
-          <p>© 2025 LES BIENHEUREUX. All rights reserved.</p>
+          <p>© 2015 – 2025 LES BIENHEUREUX. All rights reserved.</p>
           <p>
-            Website by
+            Designed and Developed by
             <a href="https://shivantra.com" target="_blank" rel="noopener noreferrer">Shivantra</a>
           </p>
         </div>
