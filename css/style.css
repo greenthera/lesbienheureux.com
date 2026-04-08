@@ -533,6 +533,9 @@ p {
   z-index: 999;
   padding: 6rem 2rem 2rem;
   overflow-y: auto;
+  height: 100dvh;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   flex-direction: column;
 }
 .nav-mobile.open {
@@ -1926,7 +1929,7 @@ section {
 /* === Hero content — left panel === */
 .brand-hero-content {
   position: relative;
-  z-index: 5;
+  z-index: 4;
   padding-top: 1rem;
   max-width: 52%;
 }
@@ -2007,6 +2010,34 @@ section {
 }
 .brand-product-grid img:hover {
   transform: scale(1.05) translateY(-4px);
+}
+
+/* Brand stat cards (Pura Vida) */
+.brand-stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+.brand-stat-card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+.brand-stat-num {
+  font-size: 2.4rem;
+  font-family: var(--font-serif);
+  color: #c9a14a;
+  font-weight: 700;
+  line-height: 1;
+}
+.brand-stat-label {
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
 }
 
 /* Achievement block */
@@ -2866,6 +2897,15 @@ section {
   .brand-hero::after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.4) 100%);
   }
+  /* Brand hero text: full opacity on mobile */
+  .brand-hero-content {
+    color: var(--white);
+  }
+  .brand-hero .tagline,
+  .brand-breadcrumb,
+  .brand-breadcrumb a {
+    color: var(--white);
+  }
   /* Hero title: ensure white on mobile */
   .hero-title {
     color: var(--white);
@@ -2887,6 +2927,16 @@ section {
   .brand-card-footer {
     flex-wrap: wrap;
     gap: 0.4rem;
+  }
+  .brand-stat-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .brand-stat-card {
+    padding: 1.4rem 1.2rem;
+  }
+  .brand-stat-num {
+    font-size: 2.1rem;
   }
   /* Awards counter: tighter padding on mobile */
   .awards-counter {
