@@ -591,6 +591,9 @@ p {
 }
 .nav-mobile-brands.open {
   display: block;
+  max-height: 55vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .nav-mobile-brands a {
   font-size: 0.9rem;
